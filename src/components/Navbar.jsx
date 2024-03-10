@@ -22,7 +22,7 @@ const Navbar = () => {
       {user?.displayName ? (
         <button onClick={handleSignOut}>Sair</button>
       ) : (
-        <Link to='/signin'>Login</Link>
+        <Link to='/signin' className='text-white font-semibold bg-blue-600 hover:bg-blue-500 py-3 px-10'>Login</Link>
       )}
     </div>
   );

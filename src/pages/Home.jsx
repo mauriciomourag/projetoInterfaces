@@ -1,9 +1,10 @@
 import React from 'react'
+import imagem from '../assets/firebaselogo.jpg'
 
 const Home = () => {
   return (
     <div>
-      <h1 className='text-center text-3xl font-bold py-8'>Home Page</h1>
+      <img className='h-screen w-full object-cover object-center' src={imagem }/>
     </div>
   )
 }

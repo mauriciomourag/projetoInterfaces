@@ -50,18 +50,18 @@ const Account = () => {
   return (
     <div className='w-[300px] m-auto'>
       <h1 className='text-center text-2xl font-bold pt-12'>Minha Conta</h1>
-      <div>
-        <p>Seja Bem-Vindo, {user?.displayName}</p>
+      <div className='m-5 p-2'>
+        <p className='font-semibold'>Seja Bem-Vindo, {user?.displayName}</p>
       </div>
       <header className="Images-header">
         <form onSubmit={handleSubmit}>
           <input type="file" />
-          <button>Enviar</button>
+          <button className='border border-blue-500 bg-blue-600 hover:bg-blue-500 w-full p-4 my-2 text-white'>Enviar</button>
         </form>
-        {!imgURL && <p>{progressPorcent}%</p>}
+        {!imgURL && <p className='text-blue-500 text-center text-2xl'>{progressPorcent}%</p>}
         {imgURL && <img src={imgURL} alt="Imagem" height={200} />}
       </header>
-      <button onClick={handleSignOut} className='border py-2 px-5 mt-10'>
+      <button onClick={handleSignOut} className='border py-2 px-5 mt-10 bg-red-500 hover:bg-red-400 text-white '>
         Logout
       </button>
     </div>
