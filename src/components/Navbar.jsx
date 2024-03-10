@@ -14,10 +14,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex justify-between bg-gray-200 w-full p-4'>
+    <div className='flex justify-between bg-blue-200 w-full p-4'>
+     <Link to='/'>
       <h1 className='text-center text-2xl font-bold'>
-        Firebase com Autenticador Google
-      </h1>
+        Autentificação com Google Firebase
+      </h1></Link>
       {user?.displayName ? (
         <button onClick={handleSignOut}>Sair</button>
       ) : (
